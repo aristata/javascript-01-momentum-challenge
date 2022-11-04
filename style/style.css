@@ -2,7 +2,6 @@
   display: none;
 }
 
-#login-container,
-#greeting-container {
+body {
   text-align: center;
 }
