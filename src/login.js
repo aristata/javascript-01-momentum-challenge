@@ -29,6 +29,7 @@ const loginInput = loginContainer.querySelector("input");
 const greetingContainer = document.querySelector("#greeting-container");
 const greetingTitle = greetingContainer.querySelector("h1");
 const logoutButton = greetingContainer.querySelector("button");
+const todoContainer = document.querySelector("#todo-container");
 
 // 전역 변수 --------------------------------------------------------------------
 const HIDDEN_CLASSNAME = "hidden";
@@ -46,6 +47,9 @@ function goToLogin() {
   // 그리팅 컨테이너를 감춘다
   greetingContainer.classList.add(HIDDEN_CLASSNAME);
 
+  // todo 입력 컨테이너를 감춘다
+  todoContainer.classList.add(HIDDEN_CLASSNAME);
+
   // loginForm 에 이벤트를 건다
   loginForm.addEventListener("submit", login);
 }
@@ -59,6 +63,9 @@ function goToGreeting() {
 
   // 그리팅 컨테이너를 보이게 한다
   greetingContainer.classList.remove(HIDDEN_CLASSNAME);
+
+  // todo 입력 컨테이너를 보이게 한다
+  todoContainer.classList.remove(HIDDEN_CLASSNAME);
 
   // 로컬 스토리지에서 userName 을 가져온다
   const userName = localStorage.getItem(USERNAME_KEY);

@@ -9,9 +9,10 @@
   </head>
   <body>
     <div class="grid-container">
+      <!-- 그리드 1번 영역 : 위치 & 날씨 -->
       <div class="column">1</div>
+      <!-- 그리드 2번 영역 : 로그인 & 그리팅 -->
       <div class="column">
-        <!-- 로그인 -->
         <div id="login-container">
           <h1>로그인</h1>
           <form>
@@ -25,16 +26,25 @@
           <button>로그아웃</button>
         </div>
       </div>
+      <!-- 그리드 3번 영역 : 시계 -->
       <div class="column">
-        <!-- 시계 -->
         <div id="clock-container"></div>
       </div>
+      <!-- 그리드 4번 영역 -->
       <div class="column">4</div>
-      <div class="column">5</div>
+      <!-- 그리드 5번 영역 : Todo -->
+      <div id="todo-container" class="column hidden">
+        <form>
+          <input type="text" placeholder="오늘 할 일을 입력하세요" />
+        </form>
+        <ul></ul>
+      </div>
+      <!-- 그리드 6번 영역 : 명언 -->
       <div class="column">6</div>
     </div>
     <script src="src/login.js"></script>
     <script src="src/clock.js"></script>
     <script src="src/background.js"></script>
+    <script src="src/todo.js"></script>
   </body>
 </html>
