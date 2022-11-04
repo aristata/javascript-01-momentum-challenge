@@ -7,14 +7,23 @@ body {
 }
 
 .backgroundImg {
-  max-width: 210vh;
-  max-height: 180vh;
-  left: 0;
-  right: 0;
-  top: 0;
-  bottom: 0;
+  left: 0px;
+  right: 0px;
+  top: 0px;
+  bottom: 0px;
   margin: auto;
   overflow: auto;
   position: fixed;
   z-index: -1;
+}
+
+.grid-container {
+  height: 90vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 2fr;
+}
+
+.column {
+  border: 3px solid pink;
 }
