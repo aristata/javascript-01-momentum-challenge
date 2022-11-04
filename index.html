@@ -5,8 +5,23 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>VanillaJS Last Challenge</title>
+    <link rel="stylesheet" href="/style/style.css" />
   </head>
   <body>
     <!-- 로그인 -->
+    <div id="login-container">
+      <h1>로그인</h1>
+      <form>
+        <label for="login-input">아이디: </label>
+        <input id="login-input" type="text" required maxlength="20" />
+        <button>로그인</button>
+      </form>
+    </div>
+    <div id="greeting-container" class="hidden">
+      <h1>님, 환영합니다</h1>
+      <button>로그아웃</button>
+    </div>
+
+    <script src="src/login.js"></script>
   </body>
 </html>

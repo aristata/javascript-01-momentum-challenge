@@ -1,0 +1,8 @@
+.hidden {
+  display: none;
+}
+
+#login-container,
+#greeting-container {
+  text-align: center;
+}
