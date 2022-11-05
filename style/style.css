@@ -23,10 +23,13 @@ body {
   display: grid;
   grid-template-columns: 1fr 2fr 1fr;
   grid-template-rows: 1fr 2fr;
+  padding: 10px 10px 10px 10px;
 }
 
 #todo-container form input {
   width: 83%;
+  height: 30px;
+  margin-bottom: 5px;
 }
 
 #todo-container ul li {
